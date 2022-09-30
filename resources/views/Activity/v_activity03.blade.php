@@ -21,7 +21,7 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Aktivitas Pengerjaan Alat</h1>
+<h1>Aktivitas Pengerjaan Saran / Masukan</h1>
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
@@ -42,26 +42,23 @@
 <div class="timeline">
 
 <div class="time-label">
-<span class="bg-blue">Laporan Diterima</span>
+<span class="bg-blue">Keluhan Diterima</span>
 </div>
 
 
 <div>
 <i class="fas fa-check  bg-blue"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>Tanggal Update</span>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal1}}</span>
 <h3 class="timeline-header"><a href="#">Laporan ini sudah diterima</a></h3>
 <div class="timeline-body">
-Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-weebly ning heekya handango imeem plugg dopplr jibjab, movity
-jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-quora plaxo ideeli hulu weebly balihoo...
+{{$datas->catatan1}}
 </div>
 </div>
 </div>
 
 <div class="time-label">
-<span class="bg-yellow">Laporan Dikerjakan</span>
+<span class="bg-yellow">Keluhan Dikerjakan</span>
 </div>
 
 <!-- <div>
@@ -76,12 +73,14 @@ quora plaxo ideeli hulu weebly balihoo...
 <div>
 <i class="fas fa-check bg-yellow"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>tanggal update</span>
-<h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal2}}</span>
+<h3 class="timeline-header"><a href="#">Laporan ini sedang dikerjakan</a></h3>
 <div class="timeline-body">
-Take me to your leader!
-Switzerland is small and neutral!
-We are more like Germany, ambitious and misunderstood!
+{{$datas->catatan2}}
+</div>
+<div class="timeline-body">
+<img src="{{$datas->foto2}}" alt="#">
+
 </div>
 <!--<div class="timeline-footer">
 <a class="btn btn-warning btn-sm">View comment</a>
@@ -98,14 +97,14 @@ We are more like Germany, ambitious and misunderstood!
 <div>
 <i class="fas fa-check bg-green"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>tanggal update</span>
-<h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal3}}</span>
+<h3 class="timeline-header"><a href="#">Laporan ini sudah selesai dikerjakan</a></h3>
 <div class="timeline-body">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
+{{$datas->catatan3}}
+</div>
+<div class="timeline-body">
+<img src="#" alt="{{$datas->foto3}}">
+
 </div>
 </div>
 </div>
@@ -130,11 +129,14 @@ We are more like Germany, ambitious and misunderstood!
 <div>
 <i class="fas fa-check bg-green"></i>
 </div>
+
 </div>
 </div>
 
 </div>
 </div>
+
+<h1>SELESAI</h1>
 
 </section>
 

@@ -21,7 +21,7 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Aktivitas Pengerjaan Alat</h1>
+<h1>Aktivitas Pengerjaan Saran / Masukant</h1>
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
@@ -42,26 +42,23 @@
 <div class="timeline">
 
 <div class="time-label">
-<span class="bg-blue">Laporan Diterima</span>
+<span class="bg-blue">Keluhan Diterima</span>
 </div>
 
 
 <div>
 <i class="fas fa-check  bg-blue"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>Tanggal Update</span>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal1}}</span>
 <h3 class="timeline-header"><a href="#">Laporan ini sudah diterima</a> </h3>
 <div class="timeline-body">
-Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-weebly ning heekya handango imeem plugg dopplr jibjab, movity
-jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-quora plaxo ideeli hulu weebly balihoo...
+{{$datas->catatan1}}
 </div>
 </div>
 </div>
 
 <div class="time-label">
-<span class="bg-yellow">Laporan Dikerjakan</span>
+<span class="bg-yellow">Keluhan Dikerjakan</span>
 </div>
 
 
@@ -69,16 +66,12 @@ quora plaxo ideeli hulu weebly balihoo...
 <div>
 <i class="fas fa-check bg-yellow"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>tanggal update</span>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal2}}</span>
 <h3 class="timeline-header"><a href="#">Laporan ini sedang dikerjakan</a></h3>
 <div class="timeline-body">
-Take me to your leader!
-Switzerland is small and neutral!
-We are more like Germany, ambitious and misunderstood!
+{{$datas->catatan2}}
 </div>
-<!--<div class="timeline-footer">
-<a class="btn btn-warning btn-sm">View comment</a>
-</div> -->
+
 </div>
 </div>
 
@@ -94,31 +87,11 @@ We are more like Germany, ambitious and misunderstood!
 <span class="time"><i class="fas fa-clock"></i>-------</span>
 <h3 class="timeline-header"><a href="#">----------------</a> --------------</h3>
 <div class="timeline-body">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
+<!-- tempat foto -->
 </div>
 </div>
 </div>
 
-
-<!--<div>
-<i class="fas fa-video bg-maroon"></i>
-<div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i> 5 days ago</span>
-<h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
-<div class="timeline-body">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tMWkeBIohBs" allowfullscreen></iframe>
-</div>
-</div>
-<div class="timeline-footer">
-<a href="#" class="btn btn-sm bg-maroon">See comments</a>
-</div>
-</div>
-</div> -->
 
 <div>
 <i class="fas fa-check bg-gray"></i>

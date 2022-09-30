@@ -1,13 +1,12 @@
-@extends('layout.v_pj_template')
-@section('title','Proses Timeline')
 
-@section('content')
+@section('proses-timeline1')
+
 
 <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-8">
-          <h1 class="card-title">Proses Pengerjaan Laporan</h1>
+          <h1 class="card-title">Progres Tindak Lanjut Keluhan - Pengerjaan</h1>
           </div>
         </div>
       </div>
@@ -18,7 +17,7 @@
 
         </div>
         <div class="card-body">
-        <form method="" action="" enctype="multipart/form-data">
+        <form method="POST" action="/updatedata2/{{ $datas->id }}" enctype="multipart/form-data">
           @csrf 
             
 
@@ -29,19 +28,19 @@
 
             <div class="form-group">
               <label for="#">Catatan</label>
-              <input type="text" class="form-control" name="catatan1" id="#" placeholder="Masukan lokasi anda disini" >
+              <input type="text" class="form-control" name="catatan2" id="#" placeholder="Masukan lokasi anda disini" >
               <small id="#" class="form-text text-muted">isi catatan atau keterangan</small>
             </div>
 
             <div class="form-group">
               <label for="#">Tanggal diterima</label>
-              <input type="date" class="form-control" data-language="en" name="tanggal1"data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top-left'  name="tanggal" id="#" placeholder="Masukan Tanggal">
+              <input type="date" class="form-control" data-language="en" name="tanggal2"data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top-left'  name="tanggal" id="#" placeholder="Masukan Tanggal">
               <small id="#" class="form-text text-muted">Isi tanggal diperbaharui</small>
             </div>
 
             <div class="form-group">
-              <label for="#">Evidence</label>
-              <input type="file" class="form-control" name="foto1" id="#" placeholder="Masukan bukti Foto perbaikan disini" >
+              <label for="#">Evidence Pengerjaan</label>
+              <input type="file" class="form-control" name="foto2" id="#" placeholder="Masukan bukti Foto perbaikan disini" >
               <small id="#" class="form-text text-muted">isi foto perbaikan disini</small>
             </div>
 

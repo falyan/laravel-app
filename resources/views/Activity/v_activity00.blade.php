@@ -21,7 +21,7 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Aktivitas Pengerjaan Alat</h1>
+<h2>Aktivitas Pengerjaan Belum Tersedia</h2>
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
@@ -42,7 +42,7 @@
 <div class="timeline">
 
 <div class="time-label">
-<span class="bg-gray">Laporan Diterima</span>
+<span class="bg-gray">Keluhan Diterima</span>
 </div>
 
 
@@ -52,13 +52,13 @@
 <span class="time"><i class="fas fa-clock"></i>-------</span>
 <h3 class="timeline-header"><a href="#">----------------</a> --------------</h3>
 <div class="timeline-body">
--------------------
+------------------- 
 </div>
 </div>
 </div>
 
 <div class="time-label">
-<span class="bg-gray">Laporan Dikerjakan</span>
+<span class="bg-gray">Keluhan Dikerjakan</span>
 </div>
 
 <!-- <div>
@@ -76,7 +76,7 @@
 <span class="time"><i class="fas fa-clock"></i>-------</span>
 <h3 class="timeline-header"><a href="#">----------------</a> --------------</h3>
 <div class="timeline-body">
--------------------
+------------------- 
 </div>
 <!--<div class="timeline-footer">
 <a class="btn btn-warning btn-sm">View comment</a>
@@ -96,11 +96,6 @@
 <span class="time"><i class="fas fa-clock"></i>-------</span>
 <h3 class="timeline-header"><a href="#">----------------</a> --------------</h3>
 <div class="timeline-body">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
 </div>
 </div>
 </div>

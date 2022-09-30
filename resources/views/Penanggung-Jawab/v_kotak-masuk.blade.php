@@ -34,9 +34,9 @@
                     <thead class="thead">
                         <tr>
                         <th scope="col" class="table-secondary">No</th>
-                        <th scope="col" class="table-secondary">@sortablelink('nama','Nama')</th>
-                        <th scope="col" class="table-secondary">@sortablelink('alat','Nama Peratalan')</th>
-                        <th scope="col" class="table-secondary">Tanggal</th>
+                        <th scope="col" class="table-secondary">@sortablelink('tanggal','Tanggal Pengajuan')</th>
+                        <th scope="col" class="table-secondary">@sortablelink('nama','Nama Lengkap')</th>
+                        <th scope="col" class="table-secondary">@sortablelink('alat','Saran Masukan')</th>   
                         <th scope="col" class="table-secondary">Lokasi</th>
                         <th scope="col" class="table-secondary">Kendala</th>
                         <th scope="col" class="table-secondary">Evidence</th>
@@ -48,9 +48,9 @@
                             <tbody>
                                 <tr>
                                   <th scope="row">{{ $no++ }}</th>
+                                  <td>{{ $value->tanggal }}</td>
                                   <td>{{ $value->nama }}</td>
                                   <td>{{ $value->alat }}</td>
-                                  <td>{{ $value->tanggal }}</td>
                                   <td>{{ $value->lokasi }}</td>
                                   <td>{{ $value->kendala }}</td>
                                   <td>

@@ -56,7 +56,7 @@
 
             <div class="form-group">
               <label for="">Evidence</label>
-              <input type="text" class="form-control" name="evidence" id="#" placeholder="Masukan bukti foto disini" value="{{$datas->evidence}}">
+              <input type="file" class="form-control" name="evidence" id="#" placeholder="Masukan bukti foto disini" value="{{$datas->evidence}}">
               <small id="#" class="form-text text-muted">Isi kendala sesuai keadaan peralatan rumah tangga</small>
             </div>
 

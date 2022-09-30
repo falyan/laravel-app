@@ -21,7 +21,7 @@
 <div class="container-fluid">
 <div class="row mb-2">
 <div class="col-sm-6">
-<h1>Aktivitas Pengerjaan Alat</h1>
+<h1>Aktivitas Saran / Masukan</h1>
 </div>
 <div class="col-sm-6">
 <ol class="breadcrumb float-sm-right">
@@ -42,22 +42,22 @@
 <div class="timeline">
 
 <div class="time-label">
-<span class="bg-blue">Laporan Diterima</span>
+<span class="bg-blue">Keluhan Diterima</span>
 </div>
 
 <div>
 <i class="fas fa-check  bg-blue"></i>
 <div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i>tanggal update</span>
+<span class="time"><i class="fas fa-clock"></i>&nbsp;{{$datas->tanggal1}}</span>
 <h3 class="timeline-header"><a href="#">Laporan ini sudah diterima</a></h3>
 <div class="timeline-body">
-catatan
+{{$datas->catatan1}}
 </div>
 </div>
 </div>
 
 <div class="time-label">
-<span class="bg-gray">Laporan Dikerjakan</span>
+<span class="bg-gray">Keluhan Dikerjakan</span>
 </div>
 
 <!-- <div>
@@ -95,31 +95,12 @@ catatan
 <span class="time"><i class="fas fa-clock"></i>-------</span>
 <h3 class="timeline-header"><a href="#">----------------</a> --------------</h3>
 <div class="timeline-body">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
-<img src="#" alt="...">
+    <!-- tempat foto -->
 </div>
 </div>
 </div>
 
 
-<!--<div>
-<i class="fas fa-video bg-maroon"></i>
-<div class="timeline-item">
-<span class="time"><i class="fas fa-clock"></i> 5 days ago</span>
-<h3 class="timeline-header"><a href="#">Mr. Doe</a> shared a video</h3>
-<div class="timeline-body">
-<div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tMWkeBIohBs" allowfullscreen></iframe>
-</div>
-</div>
-<div class="timeline-footer">
-<a href="#" class="btn btn-sm bg-maroon">See comments</a>
-</div>
-</div>
-</div> -->
 
 <div>
 <i class="fas fa-check bg-gray"></i>
