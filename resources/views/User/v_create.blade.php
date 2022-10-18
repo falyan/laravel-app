@@ -8,7 +8,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-8">
-            <h1>Formulir Layanan Kerumahtanggaan Puslitbangnak</h1>
+            <h1>Formulir Saran / Masukan Perbaikan Sarana Prasarana </h1>
           </div>
         </div>
       </div>
@@ -27,14 +27,20 @@
             </div>
 
             <div class="form-group">
-              <label for="">Nip</label>
+              <label for="">NIP</label>
               <input type="text" class="form-control" name="nip" id="#" placeholder="Masukan nip anda disini" >
             </div>
 
             <div class="form-group">
-              <label for="">Nama Peralatan</label>
+              <label for="">Saran Masukan</label>
               <input type="text" class="form-control" name="alat" id="#" placeholder="Masukan nama peralatan disini">
-              <small id="#" class="form-text text-muted">Isi nama peralatan sesuai keadaan peralatan rumah tangga</small>
+              <small id="#" class="form-text text-muted">Isi nama Sarpras yang perlu diperbaiki</small>
+            </div>
+
+            <div class="form-group">
+              <label for="">Keluhan</label>
+              <input type="text" class="form-control" name="kendala" id="#" placeholder="Masukan kendala anda disini">
+              <small id="#" class="form-text text-muted">Isi kendala sesuai keadaan peralatan rumah tangga</small>
             </div>
 
             <div class="form-group">
@@ -44,16 +50,12 @@
             </div>
 
             <div class="form-group">
-              <label for="#">Tanggal</label>
+              <label for="#">Tanggal Pengajuan</label>
               <input type="date" class="form-control" data-language="en" data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top-left'  name="tanggal" id="#" placeholder="Masukan Tanggal">
               <small id="#" class="form-text text-muted">Isi lokasi peralatan rumah tangga</small>
             </div>
 
-            <div class="form-group">
-              <label for="">Kendala</label>
-              <input type="text" class="form-control" name="kendala" id="#" placeholder="Masukan kendala anda disini">
-              <small id="#" class="form-text text-muted">Isi kendala sesuai keadaan peralatan rumah tangga</small>
-            </div>
+         
 
             <div class="form-group">
               <label for="">Evidence</label>
@@ -75,7 +77,7 @@
                 <small id="#" class="form-text text-muted">Masukan foto bukti kerusakan peralatan rumah tangga</small>
               </div> -->
 
-            <button type="submit" class="btn btn-success">Ajukan Layanan</button>
+            <button type="submit" class="btn btn-success">Ajukan Masukan</button>
           </form>
         </div>
         <!-- /.card-body -->

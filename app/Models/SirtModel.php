@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Kyslik\ColumnSortable\Sortable;
 
 
+
 class SirtModel extends Model
 {
     use Sortable;
@@ -50,5 +51,7 @@ class SirtModel extends Model
     {
         return DB::table('pengajuan')->get();
     }
+
+    
 
 }

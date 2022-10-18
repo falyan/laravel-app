@@ -7,14 +7,14 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-8">
-            <h1>Selamat Datang di Layanan Kerumahtanggaan Puslitbangnak</h1>
+            <h1>Selamat Datang di Saran / Masukan Perbaikan Sarpras Puslitbangnak</h1>
           </div>
         </div>
       </div>
        
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">List Pengajuan Anda Terkini </h3>
+          <h3 class="card-title">List Pengajuan Anda </h3>
         </div>
 
         <div class="card-body">
@@ -38,8 +38,24 @@
                                   <td>{{ $value->lokasi }}</td>
                                   <td>{{ $value->kendala }}</td>
                                   <td>
-                                  <a href="#"  class="btn btn-success">Done</a>
 
+                                  @if($value->catatan1==NULL AND $value->catatan2==NULL AND $value->catatan3==NULL)
+                                  
+                                  <a href="#"  class="btn btn-secondary">Belum diterima</a>
+                                  
+                                  @elseif($value->catatan1==$value->catatan1 AND $value->catatan2==NULL AND $value->catatan3==NULL)
+                                  
+                                    <a href="#"  class="btn btn-info">Diterma</a>
+                                  
+                                  @elseif($value->catatan1==$value->catatan1 AND $value->catatan2==$value->catatan2 AND $value->catatan3==NULL)
+                                  
+                                  <a href="#"  class="btn btn-warning">Diproses</a>
+                                  
+                                  @else
+                                  
+                                    <a href="#"  class="btn btn-success">Selesai</a>
+                                  
+                                  @endif
                                   </td>
                                 </tr>
                              </tbody> 

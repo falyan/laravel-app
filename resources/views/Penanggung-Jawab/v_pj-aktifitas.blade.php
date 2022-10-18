@@ -40,7 +40,7 @@
                         <th scope="col" class="table-secondary">Lokasi</th>
                         <th scope="col" class="table-secondary">Kendala</th>
                         <th scope="col" class="table-secondary">Evidence</th>
-                        <th scope="col" class="table-secondary">Tahap</th>
+                        <th scope="col" class="table-secondary">Proses</th>
                         </tr>
                     </thead>
                         @php $no = 1; @endphp
@@ -57,26 +57,34 @@
                                     <img src="{{asset('evidence/'.$value->evidence)}}" alt="" style="width: 100px;">
                                   </td>
                                   <td>
-                                          
-                                          <a href = "/tampilkandata3/{{$value->id}}" type="button" class="btn btn-outline-info">
-                                            <div>
-                                            <i>1</i>
-                                            </div>
-                                          </a>
+                                  @if($value->catatan1==NULL AND $value->catatan2==NULL AND $value->catatan3==NULL)
+                                  
+                                  <a href="/test/{{$value->id}}"  type="button" class="btn btn-outline-info">
+                                  <i>Terima</i>
+                                  </a>
 
-                                          
+                                  @elseif($value->catatan1==$value->catatan1 AND $value->catatan2==NULL AND $value->catatan3==NULL)
+                                  <a href="/test/{{$value->id}}"  type="button" class="btn btn-outline-warning">
+                                  <div>
+                                  <i>Proses</i>
+                                  </div>
+                                  </a>
+                                  
+                                  @elseif($value->catatan1==$value->catatan1 AND $value->catatan2==$value->catatan2 AND $value->catatan3==NULL)
+                                  
+                                  <a href="/test/{{$value->id}}"  type="button" class="btn btn-outline-success">
+                                  <div>
+                                  <i>Submit</i>
+                                  </div>
+                                  </a>
+                                  
+                                  
+                                  @else
+                                  
+                                    <a href="#"  class="btn btn-success">Selesai</a>
+                                  
+                                  @endif
 
-                                          <a href="/tampilkandata4/{{$value->id}}"type="button" class="btn btn-outline-warning">
-                                            <div>
-                                              <i>2</i>
-                                            </div>
-                                          </a>
-
-                                          <a href="/tampilkandata5/{{$value->id}}"type="button" class="btn btn-outline-success">
-                                            <div>
-                                              <i>3</i>
-                                            </div>
-                                          </a>
                                   </td>
                                 </tr>
                              </tbody> 

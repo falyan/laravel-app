@@ -40,9 +40,9 @@
                             <thead class="thead">
                               <tr>
                                 <th scope="col" class="table-primary">No</th>
-                                <th scope="col" class="table-primary">@sortablelink('alat','Nama Peratalan')</th>
+                                <th scope="col" class="table-primary">@sortablelink('alat','Saran Masukan')</th>
                                 <th scope="col" class="table-primary">Lokasi</th>
-                                <th scope="col" class="table-primary">Kendala</th>
+                                <th scope="col" class="table-primary">Keluhan</th>
                                 <th scope="col" class="table-primary">Action</th>
                               </tr>
                             </thead>

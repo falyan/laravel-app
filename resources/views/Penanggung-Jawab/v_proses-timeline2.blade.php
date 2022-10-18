@@ -1,13 +1,11 @@
-@extends('layout.v_pj_template')
-@section('title','Proses Timeline')
 
-@section('content')
+@section('proses-timeline2')
 
 <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-8">
-          <h1 class="card-title">Proses Penyelesaian Laporan</h1>
+          <h1 class="card-title">Tindak Lanjut Keluhan - Selesai</h1>
           </div>
         </div>
       </div>
@@ -18,36 +16,36 @@
 
         </div>
         <div class="card-body">
-        <form method="" action="" enctype="multipart/form-data">
+        <form method="POST" action="/updatedata3/{{ $datas->id }}" enctype="multipart/form-data">
           @csrf 
             
 
             <div class="form-group">
-              <label for="">Nama Peralatan</label>
+              <label for="">Saran / Masukan</label>
               <input type="text" class="form-control" name="alat" id="#" value = "{{$datas->alat}}" placeholder="Masukan nama peralatan disini">
             </div>
 
             <div class="form-group">
               <label for="#">Catatan</label>
-              <input type="text" class="form-control" name="catatan1" id="#" placeholder="Masukan lokasi anda disini" >
+              <input type="text" class="form-control" name="catatan3" id="#" placeholder="Masukan lokasi anda disini" >
               <small id="#" class="form-text text-muted">isi catatan atau keterangan</small>
             </div>
 
             <div class="form-group">
               <label for="#">Tanggal diterima</label>
-              <input type="date" class="form-control" data-language="en" name="tanggal1"data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top-left'  name="tanggal" id="#" placeholder="Masukan Tanggal">
+              <input type="date" class="form-control" data-language="en" name="tanggal3"data-multiple-dates="3" data-multiple-dates-separator=", " data-position='top-left'  name="tanggal" id="#" placeholder="Masukan Tanggal">
               <small id="#" class="form-text text-muted">Isi tanggal diperbaharui</small>
             </div>
 
             <div class="form-group">
               <label for="#">Evidence</label>
-              <input type="file" class="form-control" name="foto1" id="#" placeholder="Masukan bukti Foto perbaikan disini" >
+              <input type="file" class="form-control" name="foto3" id="#" placeholder="Masukan bukti Foto perbaikan disini" >
               <small id="#" class="form-text text-muted">isi foto perbaikan disini</small>
             </div>
 
            
 
-            <button type="submit" class="btn btn-success">Proses</button>
+            <button type="submit" class="btn btn-success">Submit</button>
           </form>
         </div>
         <!-- /.card-body -->

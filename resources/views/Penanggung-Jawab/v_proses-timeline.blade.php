@@ -1,13 +1,10 @@
-@extends('layout.v_pj_template')
-@section('title','Proses Timeline')
-
-@section('content')
+@section('proses-timeline0')
 
 <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-8">
-          <h1 class="card-title">Proses Penerimaan Laporan</h1>
+          <h1 class="card-title">Proses Penerimaan Keluhan</h1>
           </div>
         </div>
       </div>
@@ -19,7 +16,7 @@
         </div>
         <div class="card-body">
         <!--<form method="POST" action="/createDataaktifitas" enctype="multipart/form-data">-->
-        <form method="POST" action="/proses1/{{ $datas->id }}" enctype="multipart/form-data">
+        <form method="POST" action="/updatedata/{{ $datas->id }}" enctype="multipart/form-data">
           @csrf 
             
 
@@ -43,7 +40,7 @@
 
            
 
-            <button type="submit" class="btn btn-info">Proses</button>
+            <button type="submit" class="btn btn-info">Terima</button>
           </form>
         </div>
         <!-- /.card-body -->

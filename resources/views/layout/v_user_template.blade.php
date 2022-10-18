@@ -63,7 +63,7 @@
           <img src="{{asset('template')}}/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Falyan Zuril</a>
+          <a href="#" class="d-block">{{auth()->user()->name}}</a>
         </div>
       </div>
       
@@ -77,7 +77,7 @@
             <a href="/create" class="nav-link">
               <i class="nav-icon fas fa-plus-square"></i> 
               <p>
-                Isi Pengajuan
+                Isi Saran / Masukan
               </p>
             </a>
           </li>
@@ -92,7 +92,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="/aktivitas" class="nav-link">
+            <a href="/list-aktivitas" class="nav-link">
               <i class="nav-icon fas fa-tasks"></i>
               <p>
                 Aktivitas Pengerjaan
@@ -100,7 +100,7 @@
             </a>
           </li> 
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="/logout" class="nav-link">
               <i class="nav-icon fa fa-minus-square"></i>
               <p>
                 Log Out

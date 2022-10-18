@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\SirtModel;
 use App\Http\Controllers\SirtController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
@@ -17,7 +18,7 @@ class SirtController extends Controller
      */
     public function index()
     {
-        //
+        return view('User.v_user-index',compact ('datas'));
     }
 
 
@@ -38,6 +39,7 @@ class SirtController extends Controller
         }
         
         return view('User.v_list', compact ('datas'));
+        
     }
 
 
@@ -100,6 +102,14 @@ class SirtController extends Controller
 
     }
 
+    public function test($id) //test if update proses
+    {
+        $datas = SirtModel::find($id);
+        //dd($datas);
+       return view('Penanggung-Jawab.v_proses-timeline3', compact ('datas'));
+
+    }
+
     public function tampilkandata4($id)
     {
         $datas = SirtModel::find($id);
@@ -116,16 +126,19 @@ class SirtController extends Controller
 
     }
 
-    // public function insertDataakifitas(Request $request, $id)
-    // {
-    //     $datas = SirtModel::find($id);
-    //     $datas = SirtModel::update($request->all());
-    //    // $datas = SirtModel::create($request->all());
+    public function tampilkandataAktivitas($id)
+    {
+        $datas = SirtModel::find($id);
+        return view('User.v_aktivitas', compact ('datas'));
 
-    //     dd($datas);
-    //    // return view('Activity.v_activity01', compact ('datas'));
-    // }
+    }
 
+    
+    public function userAktivitas()
+    {
+        $datas = SirtModel::sortable()->paginate(5);
+        return view('User.v_aktivitas-list', compact ('datas'));
+    }
 
 
     public function pjaktifitas()
@@ -148,19 +161,32 @@ class SirtController extends Controller
         
     }
 
-    public function proses1(Request $request, $id)
+    public function updatedata2(Request $request, $id)
     {
         $datas = SirtModel::find($id);
         $datas->update($request->all());
-        if($request->hasfile('evidence')){
-            $request->file('evidence')->move('evidence/', $request->file('evidence')->getClientOriginalName());
-            $datas->evidence = $request->file('evidence')->getClientOriginalName();
+        if($request->hasfile('foto2')){
+            $request->file('foto2')->move('proses/', $request->file('foto2')->getClientOriginalName());
+            $datas->foto2 = $request->file('foto2')->getClientOriginalName();
             $datas->save();
         }
-        return view('Activity.v_activity01', compact ('datas'));
-       // return view('User.v_aktivitas', compact ('datas'));
+        return back();
         
     }
+
+    public function updatedata3(Request $request, $id)
+    {
+        $datas = SirtModel::find($id);
+        $datas->update($request->all());
+        if($request->hasfile('foto3')){
+            $request->file('foto3')->move('proses-selesai/', $request->file('foto3')->getClientOriginalName());
+            $datas->foto3 = $request->file('foto3')->getClientOriginalName();
+            $datas->save();
+        }
+        return back();
+        
+    }
+
 
 
     public function delete($id)
